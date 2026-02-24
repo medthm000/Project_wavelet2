@@ -7,27 +7,22 @@ import Slide01_Intro from './components/slides/Slide01_Intro';
 import Slide02_Fourier from './components/slides/Slide02_Fourier';
 import Slide03_WaveletConcept from './components/slides/Slide03_WaveletConcept';
 import Slide04_Haar from './components/slides/Slide04_Haar';
-
-// Placeholder slides for completion
-const PlaceholderSlide = ({ slideNum, title }: { slideNum: number; title: string }) => (
-  <div className="relative z-10 flex items-center justify-center min-h-screen px-8">
-    <div className="text-center">
-      <h2 className="text-5xl font-bold text-white mb-4">{title}</h2>
-      <p className="text-gray-400">Slide {slideNum} — Content in development</p>
-    </div>
-  </div>
-);
+import Slide05_Daubechies from './components/slides/Slide05_Daubechies';
+import Slide06_Morlet from './components/slides/Slide06_Morlet';
+import Slide07_Decomposition from './components/slides/Slide07_Decomposition';
+import Slide08_WaveletARMA from './components/slides/Slide08_WaveletARMA';
+import Slide09_Conclusion from './components/slides/Slide09_Conclusion';
 
 const SLIDES = [
   { id: 0, component: Slide01_Intro },
   { id: 1, component: Slide02_Fourier },
   { id: 2, component: Slide03_WaveletConcept },
   { id: 3, component: Slide04_Haar },
-  { id: 4, component: () => <PlaceholderSlide slideNum={5} title="Daubechies db4" /> },
-  { id: 5, component: () => <PlaceholderSlide slideNum={6} title="Morlet + Coherence" /> },
-  { id: 6, component: () => <PlaceholderSlide slideNum={7} title="Decomposition Mechanics" /> },
-  { id: 7, component: () => <PlaceholderSlide slideNum={8} title="Wavelet + ARMA" /> },
-  { id: 8, component: () => <PlaceholderSlide slideNum={9} title="Conclusion" /> },
+  { id: 4, component: Slide05_Daubechies },
+  { id: 5, component: Slide06_Morlet },
+  { id: 6, component: Slide07_Decomposition },
+  { id: 7, component: Slide08_WaveletARMA },
+  { id: 8, component: Slide09_Conclusion },
 ];
 
 function App() {
