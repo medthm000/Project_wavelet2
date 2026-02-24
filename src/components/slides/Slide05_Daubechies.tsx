@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 import gsap from 'gsap';
 import { BRENT_MONTHLY, interpolateSeries, extractValues } from '../../utils/realData';
 import { db4Decompose, reconstructLevel } from '../../utils/waveletMath';
